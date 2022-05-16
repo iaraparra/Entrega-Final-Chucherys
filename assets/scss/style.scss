@@ -1,0 +1,64 @@
+@import "variables.scss";
+
+@mixin propiedadesBotonAgregar ($background, $color){
+    background-color: $background;
+    color: $color;
+    width: $ancho;
+    height: $alto;
+    border: $borde;
+}
+*{
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: $coloroscuro;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-name: aparecer;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    };
+    100%{
+        opacity: 1;
+    };
+}
+.navbar{
+    background-color: $colorclaro;
+}
+.bodyIndex{
+    background-color: $colorclaro;
+}
+.tituloDestacados{
+    font-weight: 600;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: $coloroscuro;
+}
+.boton__agregar{
+    @extend.footer__boton;
+    @include propiedadesBotonAgregar(#c488b7,#35001f);
+    text-decoration: none;
+}
+.botonFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer__boton{
+    background-color: map-get($map: $boton, $key: $background-color );
+    border: map-get($map: $boton, $key: $border );
+    width: map-get($map: $boton, $key: $width );
+    height: map-get($map: $boton, $key: $heigth );
+    padding: map-get($map: $boton, $key: $padding );
+    border-radius: map-get($map: $boton, $key: $border-radius );
+    color: map-get($map: $boton, $key: $color );
+}
