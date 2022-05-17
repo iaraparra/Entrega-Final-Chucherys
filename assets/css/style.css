@@ -1,0 +1,65 @@
+* {
+  margin: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #70164b; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.navbar {
+  background-color: #fdf4fb; }
+
+.body {
+  background-color: #fdf4fb; }
+
+.tituloDestacados {
+  font-weight: 600;
+  font-size: 20pt;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  color: #70164b; }
+
+.form-control__texrarea {
+  height: 200px; }
+
+.contenedor__local {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.botonFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.footer__boton, .boton__agregar, .boton {
+  background: #35001f;
+  border: none;
+  width: 100px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #c488b7; }
+
+.boton__agregar {
+  background-color: #c488b7;
+  color: #35001f;
+  text-decoration: none; }
+
+.boton {
+  background-color: #c488b7;
+  color: #35001f; }

@@ -2,10 +2,7 @@
 
 @mixin propiedadesBotonAgregar ($background, $color){
     background-color: $background;
-    color: $color;
-    width: $ancho;
-    height: $alto;
-    border: $borde;
+    color: $color
 }
 *{
     margin: 5px;
@@ -32,7 +29,7 @@
 .navbar{
     background-color: $colorclaro;
 }
-.bodyIndex{
+.body{
     background-color: $colorclaro;
 }
 .tituloDestacados{
@@ -43,10 +40,14 @@
     margin-top: 50px;
     color: $coloroscuro;
 }
-.boton__agregar{
-    @extend.footer__boton;
-    @include propiedadesBotonAgregar(#c488b7,#35001f);
-    text-decoration: none;
+.form-control__texrarea{
+    height: 200px;
+}
+.contenedor__local{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .botonFooter{
     display: flex;
@@ -54,11 +55,21 @@
     justify-content: center;
 }
 .footer__boton{
-    background-color: map-get($map: $boton, $key: $background-color );
-    border: map-get($map: $boton, $key: $border );
-    width: map-get($map: $boton, $key: $width );
-    height: map-get($map: $boton, $key: $heigth );
-    padding: map-get($map: $boton, $key: $padding );
-    border-radius: map-get($map: $boton, $key: $border-radius );
-    color: map-get($map: $boton, $key: $color );
+    background: #35001f;
+    border: none;
+    width: 100px;
+    height: 50px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #c488b7 ;
+}
+.boton__agregar{
+    @extend.footer__boton;
+    @include propiedadesBotonAgregar(#c488b7,#35001f);
+    text-decoration: none;
+}
+.boton{
+    @extend.footer__boton;
+    background-color: #c488b7;
+    color: #35001f;
 }
