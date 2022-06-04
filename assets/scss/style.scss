@@ -26,11 +26,19 @@
         opacity: 1;
     };
 }
-.navbar-collapse{
+  .navbar-collapse{
     display:flex;
     flex-basis: auto;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
+@media (min-width:990px) {
+    .navbar-collapse{
+        display:flex;
+        flex-basis: auto;
+        justify-content: flex-end;
+    } 
+}
+
 
 .body{
     background-color: $colorclaro;

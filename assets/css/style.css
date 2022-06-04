@@ -18,6 +18,19 @@
   100% {
     opacity: 1; } }
 
+  
+    .navbar-collapse{
+      display:flex;
+      flex-basis: auto;
+      justify-content: flex-start;
+  }
+  @media (min-width:990px) {
+      .navbar-collapse{
+          display:flex;
+          flex-basis: auto;
+          justify-content: flex-end;
+      } 
+  }
 .navbar {
   background-color: #fdf4fb; }
 
