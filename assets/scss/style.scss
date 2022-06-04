@@ -26,11 +26,32 @@
         opacity: 1;
     };
 }
-.navbar{
-    background-color: $colorclaro;
+.navbar-collapse{
+    display:flex;
+    flex-basis: auto;
+    justify-content: flex-end;
 }
+
 .body{
     background-color: $colorclaro;
+}
+
+.contenedorDestacados{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.contenedor1{
+    width: auto;
+    height: 60px;
+    background-color: #35001f;
+    color: white;
+}
+.contenedor2{
+    width: auto;
+    height: 60px;
+    background-color:#c488b7;
+    color:#35001f;
 }
 .tituloDestacados{
     font-weight: 600;
