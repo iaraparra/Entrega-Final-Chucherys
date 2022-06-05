@@ -164,6 +164,26 @@
     font-weight: 600;
     font-size: 20px;
 }
+.card:hover {
+    transform: scale(1.1);
+}
+.logosRedes{
+    width: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-right:30px;
+}
+.contenedorCopy{
+    display: flex;
+    justify-content: center;
+    
+}
+.textoCopyRigth{
+    width: 80%;
+    font-size: 9px;
+    text-align: center;
+}
 @media (min-width:990px) {
     .navbar-collapse {
         display: flex;
@@ -206,7 +226,9 @@
         margin-top: 15px;
         margin-left: 0px;
     }
-}
-.card:hover {
-    transform: scale(1.1);
+    
+    .textoCopyRigth{
+        font-size: 10px;
+        width: 50%;
+    }
 }

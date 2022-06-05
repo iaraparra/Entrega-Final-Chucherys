@@ -210,6 +210,39 @@
   font-size: 20px;
 }
 
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.logosRedes {
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 30px;
+}
+
+.contenedorCopy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.textoCopyRigth {
+  width: 80%;
+  font-size: 9px;
+  text-align: center;
+}
+
 @media (min-width: 990px) {
   .navbar-collapse {
     display: -webkit-box;
@@ -259,10 +292,9 @@
     margin-top: 15px;
     margin-left: 0px;
   }
-}
-
-.card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  .textoCopyRigth {
+    font-size: 10px;
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
