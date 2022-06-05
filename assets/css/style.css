@@ -201,6 +201,11 @@
   width: 90%;
 }
 
+.card-title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
 @media (min-width: 990px) {
   .navbar-collapse {
     display: -webkit-box;
