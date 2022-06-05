@@ -1,14 +1,17 @@
 @import "variables.scss";
 
-@mixin propiedadesBotonAgregar ($background, $color){
+@mixin propiedadesBotonAgregar ($background, $color) {
     background-color: $background;
     color: $color
 }
-*{
-    margin: 5px;
+
+* {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Montserrat', sans-serif;
     color: $coloroscuro;
 }
+
 .logo {
     display: flex;
     justify-content: center;
@@ -18,50 +21,74 @@
     animation-iteration-count: 1;
     animation-name: aparecer;
 }
+
 @keyframes aparecer {
-    0%{
+    0% {
         opacity: 0;
-    };
-    100%{
+    }
+
+    ;
+
+    100% {
         opacity: 1;
-    };
+    }
+
+    ;
 }
-  .navbar-collapse{
-    display:flex;
+
+.navbar-collapse {
+    display: flex;
     flex-basis: auto;
     justify-content: flex-start;
 }
-@media (min-width:990px) {
-    .navbar-collapse{
-        display:flex;
-        flex-basis: auto;
-        justify-content: flex-end;
-    } 
-}
 
 
-.body{
+
+.body {
     background-color: $colorclaro;
 }
 
-.contenedorDestacados{
+.contenedorDestacados {
     display: flex;
     flex-wrap: wrap;
-    
+    margin-bottom: 5px;
 }
-.contenedor1{
-    width: auto;
+
+.destacado1 {
+    width: 100%;
     height: 60px;
-    background-color: #35001f;
-    color: white;
+    background-color: #c488b7;
+    color: #35001f;
+    margin-top: 5px;
 }
-.contenedor2{
-    width: auto;
-    height: 60px;
-    background-color:#c488b7;
-    color:#35001f;
+
+.destacado2 {
+    @extend.destacado1;
 }
-.tituloDestacados{
+
+@media (min-width:990px) {
+    .navbar-collapse {
+        display: flex;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+
+    .contenedorDestacados {
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items:space-between;
+    }
+
+    .destacado1 {
+        width: 45%;
+    }
+
+    .destacado2 {
+        @extend.destacado1
+    }
+}
+
+.tituloDestacados {
     font-weight: 600;
     font-size: 20pt;
     display: flex;
@@ -69,35 +96,41 @@
     margin-top: 50px;
     color: $coloroscuro;
 }
-.form-control__texrarea{
+
+.form-control__texrarea {
     height: 200px;
 }
-.contenedor__local{
+
+.contenedor__local {
     width: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.botonFooter{
+
+.botonFooter {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.footer__boton{
+
+.footer__boton {
     background: #35001f;
     border: none;
     width: 100px;
     height: 50px;
     padding: 10px 15px;
     border-radius: 5px;
-    color: #c488b7 ;
+    color: #c488b7;
 }
-.boton__agregar{
+
+.boton__agregar {
     @extend.footer__boton;
-    @include propiedadesBotonAgregar(#c488b7,#35001f);
+    @include propiedadesBotonAgregar(#c488b7, #35001f);
     text-decoration: none;
 }
-.boton{
+
+.boton {
     @extend.footer__boton;
     background-color: #c488b7;
     color: #35001f;
