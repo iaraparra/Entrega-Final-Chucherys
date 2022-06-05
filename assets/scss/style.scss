@@ -77,36 +77,6 @@
     justify-content: center;
 }
 
-@media (min-width:990px) {
-    .navbar-collapse {
-        display: flex;
-        flex-basis: auto;
-        justify-content: flex-end;
-    }
-
-    .contenedorDestacados {
-        flex-direction: row;
-        justify-content: space-around;
-       
-    }
-
-    .destacado1 {
-        width: 45%;
-        height: 250px;
-        font-size: 30px;
-    }
-
-    .destacado2 {
-        width: 45%;
-        height: 250px;
-        font-size: 30px;
-    }
-    .titulo__productos{
-        justify-content: start;
-        margin-left: 30px;
-    }
-}
-
 .tituloDestacados {
     font-weight: 600;
     font-size: 20pt;
@@ -115,16 +85,36 @@
     margin-top: 50px;
     color: $coloroscuro;
 }
-
+.tituloContacto{
+    padding: 10px ;
+}
+.contenedorFormulario{
+    padding: 10px;
+}
 .form-control__texrarea {
-    height: 200px;
+    width: 100%;
+    height: 180px;
 }
 
 .contenedor__local {
-    width: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+   
+}
+.contenedorMapa{
+    display: flex;
     justify-content: center;
+    
+}
+.texto__mapa1{
+    @extend.contenedorMapa;
+    font-size: 25px;
+    margin-left: 20px
+}
+.texto__mapa2{
+    @extend.contenedorMapa;
+    margin-top: 15px;
+    margin-left: 20px
 }
 
 .botonFooter {
@@ -153,4 +143,54 @@
     @extend.footer__boton;
     background-color: #c488b7;
     color: #35001f;
+}
+.texto__mapa{
+    margin-top:5px;
+}
+.mapa{
+    width: 90%;
+}
+
+@media (min-width:990px) {
+    .navbar-collapse {
+        display: flex;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+
+    .contenedorDestacados {
+        flex-direction: row;
+        justify-content: space-around;
+       
+    }
+
+    .destacado1 {
+        width: 45%;
+        height: 250px;
+        font-size: 30px;
+    }
+
+    .destacado2 {
+        width: 45%;
+        height: 250px;
+        font-size: 30px;
+    }
+    .titulo__productos{
+        justify-content: start;
+        margin-left: 30px;
+    }
+    .tituloContacto{
+        padding: 0px;
+    }
+    .form-control__texrarea {
+        height: 180px;
+    }
+    .texto__mapa1{
+        font-size: 25px;
+        margin-left: 0px;
+    }
+    .texto__mapa2{
+        margin-top: 15px;
+        margin-left: 0px;
+    }
 }
