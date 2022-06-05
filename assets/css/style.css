@@ -87,6 +87,15 @@
   text-decoration: none;
 }
 
+.titulo__productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (min-width: 990px) {
   .navbar-collapse {
     display: -webkit-box;
@@ -115,6 +124,12 @@
     width: 45%;
     height: 250px;
     font-size: 30px;
+  }
+  .titulo__productos {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-left: 30px;
   }
 }
 

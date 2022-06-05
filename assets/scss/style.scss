@@ -72,6 +72,10 @@
 .destacado2 {
     @extend.destacado1;
 }
+.titulo__productos{
+    display: flex;
+    justify-content: center;
+}
 
 @media (min-width:990px) {
     .navbar-collapse {
@@ -97,7 +101,10 @@
         height: 250px;
         font-size: 30px;
     }
-    
+    .titulo__productos{
+        justify-content: start;
+        margin-left: 30px;
+    }
 }
 
 .tituloDestacados {
