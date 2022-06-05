@@ -42,6 +42,14 @@
   }
 }
 
+.navbar {
+  padding: 0px;
+}
+
+.container-fluid {
+  background-color: #fdf4fb;
+}
+
 .navbar-collapse {
   display: -webkit-box;
   display: -ms-flexbox;

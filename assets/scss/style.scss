@@ -35,11 +35,18 @@
 
     ;
 }
+.navbar{
+    padding: 0px;
+}
+.container-fluid{
+    background-color: rgb(253, 244, 251) ;
+}
 
 .navbar-collapse {
     display: flex;
     flex-basis: auto;
     justify-content: flex-start;
+    
 }
 
 
