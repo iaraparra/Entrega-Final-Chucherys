@@ -68,10 +68,23 @@
 
 .destacado1, .destacado2 {
   width: 100%;
-  height: 60px;
+  height: 160px;
   background-color: #c488b7;
-  color: #35001f;
-  margin-top: 5px;
+  color: #270017;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  margin-left: 5px;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 @media (min-width: 990px) {
@@ -90,15 +103,18 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .destacado1, .destacado2 {
-    width: 48%;
+    width: 45%;
+    height: 250px;
+    font-size: 30px;
   }
   .destacado2 {
-    width: 48%;
+    width: 45%;
+    height: 260px;
+    font-size: 30px;
   }
 }
 
