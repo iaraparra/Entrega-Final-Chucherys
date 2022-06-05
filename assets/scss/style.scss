@@ -60,12 +60,19 @@
     background-color: #c488b7;
     color: #35001f;
     margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
 }
 
 .destacado2 {
     @extend.destacado1;
 }
+.imgDestacado1{
+    height: 250px;
+    padding: 5px;
 
+}
 @media (min-width:990px) {
     .navbar-collapse {
         display: flex;
