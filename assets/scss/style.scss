@@ -12,7 +12,7 @@
     color: $coloroscuro;
 }
 
-.logo {
+.logo__imagen {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +78,9 @@
 
 .destacado2 {
     @extend.destacado1;
+}
+.destacado1:hover{
+    background-color: #b46ea5;
 }
 .titulo__productos{
     display: flex;
@@ -203,4 +206,7 @@
         margin-top: 15px;
         margin-left: 0px;
     }
+}
+.card:hover {
+    transform: scale(1.1);
 }

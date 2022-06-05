@@ -5,7 +5,7 @@
   color: #70164b;
 }
 
-.logo {
+.logo__imagen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,6 +93,10 @@
   margin-left: 5px;
   font-weight: 300;
   text-decoration: none;
+}
+
+.destacado1:hover, .destacado2:hover {
+  background-color: #b46ea5;
 }
 
 .titulo__productos {
@@ -255,5 +259,10 @@
     margin-top: 15px;
     margin-left: 0px;
   }
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
